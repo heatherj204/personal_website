@@ -1,35 +1,51 @@
+import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router";
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+import CssBaseline from '@mui/material/CssBaseline';
+
 import './index.css';
 import App from './App';
 import NotFound from "./pages/NotFound";
 import Nav from "./components/Base";
-import Building from "./pages/Building";
 
+function Root() {
+  const [mode, setMode] = React.useState('dark');
 
-import { createTheme, ThemeProvider } from '@mui/material/styles';
+  const theme = React.useMemo(() =>
+    createTheme({
+      palette: {
+        mode: mode,
+        primary: {
+          main: '#00838f',
+        },
+        secondary: {
+          main: '#5a7474',
+        },
+      },
+    }),
+    [mode]
+  );
 
-const theme = createTheme({
-  palette: {
-    primary: {
-      main: '#00838f',
-    },
-    secondary: {
-      main: '#84ffff',
-    },
-  },
-});
+  const toggleTheme = () => {
+    setMode((prev) => (prev === 'dark' ? 'light' : 'dark'));
+  };
+
+  return (
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+
+      <BrowserRouter>
+        <Nav toggleTheme={toggleTheme} mode={mode} />
+
+        <Routes>
+          <Route path="/" element={<App />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </BrowserRouter>
+    </ThemeProvider>
+  );
+}
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <ThemeProvider theme={theme}>
-  <BrowserRouter>
-  <Nav />
-    <Routes>
-      <Route path="/" element={<App />} />
-      <Route path="/test" element={<Building />} />
-      <Route path="*" element={<NotFound />} />
-    </Routes>
-  </BrowserRouter>
-  </ThemeProvider>
-);
+root.render(<Root />);
