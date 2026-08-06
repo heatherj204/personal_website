@@ -7,7 +7,8 @@ import CssBaseline from '@mui/material/CssBaseline';
 import './index.css';
 import App from './App';
 import NotFound from "./pages/NotFound";
-import Nav from "./components/Base";
+import Building from "./pages/Building";
+import Nav from "./components/Nav";
 
 function Root() {
   const [mode, setMode] = React.useState('dark');
@@ -17,7 +18,7 @@ function Root() {
       palette: {
         mode: mode,
         primary: {
-          main: '#00838f',
+          main: '#5a7474',
         },
         secondary: {
           main: '#5a7474',
@@ -40,6 +41,7 @@ function Root() {
 
         <Routes>
           <Route path="/" element={<App />} />
+          <Route path="/building" element={<Building />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
