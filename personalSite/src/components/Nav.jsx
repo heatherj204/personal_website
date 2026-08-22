@@ -24,7 +24,8 @@ const navItems = [
     { name: 'About', path: '/#aboutMe' },
     { name: 'Projects', path: '/#projects' },
     { name: 'Weather App', path: 'https://weather.heather.network/', external: true },
-    { name: 'Other', path: '/building' }
+    { name: 'TaskHive', path: 'https://taskhive.group/', external: true },
+    // { name: 'Other', path: '/building' }
 ];
 
 function navBar(props) {

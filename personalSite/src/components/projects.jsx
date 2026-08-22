@@ -31,7 +31,7 @@ function Projects() {
                 </Typography>
 
                 <Typography variant="subtitle1" sx={{ opacity: 0.8 }}>
-                Computer Science Student
+                JavaScript | React.js | REST API | HTML/CSS
                 </Typography>
             </Stack>
 
@@ -40,7 +40,11 @@ function Projects() {
                 variant="body1"
                 sx={{ mt: 3, textAlign: 'center' }}
             >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor womp womp in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Developed a responsive React.js weather application that allows users to search for locations and view real-time weather information. Integrated a REST API to retrieve and dynamically display current weather conditions based on the user’s search, with a focus on creating a clean and intuitive user experience.
+                <p/>
+                The application was also deployed and hosted on a subdomain of my personal website, making the project publicly accessible.
+                <p/>
+                Available <a href="https://weather.heather.network/">here</a>
             </Typography>
             </Box>
 
@@ -57,18 +61,13 @@ function Projects() {
             >
             {/* Top section (avatar + name) */}
             <Stack direction="column" spacing={2} alignItems="center">
-                {/* <Avatar
-                alt="Heather"
-                src="/avatar.png" // replace with your image
-                sx={{ width: 80, height: 80 }}
-                /> */}
 
                 <Typography variant="h5">
                     TaskHive
                 </Typography>
 
                 <Typography variant="subtitle1" sx={{ opacity: 0.8 }}>
-                    Backend development of productivity web app
+                    Python | Django REST Framework | REST API
                 </Typography>
             </Stack>
 
@@ -77,7 +76,9 @@ function Projects() {
                 variant="body1"
                 sx={{ mt: 3, textAlign: 'center' }}
             >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor womp womp in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Responsible for the backend development, building the application’s API using Django REST Framework. Designed and implemented the API endpoints and backend logic needed to support tasks, projects, teams, and user interactions, while ensuring the frontend could communicate reliably with the backend.
+                <p/>
+                This project gave me valuable hands-on experience with RESTful API development, Django, database management, authentication, and full-stack application architecture, as well as experience collaborating on a larger software project.
             </Typography>
             </Box>
 
@@ -94,18 +95,13 @@ function Projects() {
             >
             {/* Top section (avatar + name) */}
             <Stack direction="column" spacing={2} alignItems="center">
-                {/* <Avatar
-                alt="Heather"
-                src="/avatar.png" // replace with your image
-                sx={{ width: 80, height: 80 }}
-                /> */}
 
                 <Typography variant="h5">
-                    TaskHive
+                    Personal Unix Shell
                 </Typography>
 
                 <Typography variant="subtitle1" sx={{ opacity: 0.8 }}>
-                    Backend development of productivity web app
+                    C | Linux/Unix | System Programming
                 </Typography>
             </Stack>
 
@@ -114,7 +110,9 @@ function Projects() {
                 variant="body1"
                 sx={{ mt: 3, textAlign: 'center' }}
             >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor womp womp in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Designed and implemented a custom Unix shell in C, supporting batch-mode execution, I/O redirection, process creation and execution, and background processing. The project provided hands-on experience with systems programming, process management, and operating system concepts.
+                <p/>
+                While also producing comprehensive technical documentation, including a user manual and detailed description of the shell’s functionality and implementation.
             </Typography>
             </Box>
         </Box>
