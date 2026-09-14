@@ -19,12 +19,6 @@ function About() {
         >
         {/* Top section (avatar + name) */}
         <Stack direction="column" spacing={2} alignItems="center">
-            {/* <Avatar
-            alt="Heather"
-            src="/avatar.png" // replace
-            sx={{ width: 80, height: 80 }}
-            /> */}
-
             <Typography variant="h5">
             Heather
             </Typography>
