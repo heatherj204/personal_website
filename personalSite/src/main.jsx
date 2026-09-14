@@ -8,6 +8,7 @@ import './index.css';
 import App from './App';
 import NotFound from "./pages/NotFound";
 import Building from "./pages/Building";
+import ComsciProject from "./pages/ComsciProject"
 import Nav from "./components/Nav";
 
 function Root() {
@@ -42,6 +43,7 @@ function Root() {
         <Routes>
           <Route path="/" element={<App />} />
           <Route path="/building" element={<Building />} />
+          <Route path="/comsciyear4" element={<ComsciProject />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
